@@ -1,0 +1,119 @@
+@media screen and (min-width: 1200px) {
+
+    main {
+
+        // Pagina de index
+
+        .contenedor_carruselInicio {
+            .item_Carrusel {
+                img {
+                    object-position: top;
+                }
+            }
+        }
+
+        .contenedor_carruselOfertas {
+            .card {
+                width: calc(100%/3);
+                position: relative;
+                .imagen_Card {
+                    flex-direction: row;
+                    height: 45vw;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .contenedor_Novedades {
+            img {
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    // Pagina de catalogo
+
+    .contenedor_Categoria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    // Pagina de colecciones
+    .contenedor_Coleccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    // Pagina de articulos
+
+    .contenedor_Articulo {
+        display: flex;
+        flex-direction: column;
+            .contenedor_imagenesArticulo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                height: 60vw;
+                div {
+                    
+                    .carrusel_Articulo {
+                        .carousel-item {
+                            width: 100%; 
+                            img {
+                                max-width: 100%;
+                                max-height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // pagina de contactos
+
+        .contenedor_Contacto {
+            // display: flex;
+            flex-direction: row;
+            justify-content: space-around; 
+            .contenedor_Formulario {
+                width: 70%;
+            }
+            .contenedor_Informacion {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // height: 80%;
+            }
+        }
+    }
+
+    // Pagina de Footer
+    footer {
+        
+        .contenedor_Filosofia {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .contenedor_Contactos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .newsletter {
+                margin: 1rem;
+            }
+
+            .redesSociales {
+                margin: 1rem;
+            }
+        }
+    }
+}

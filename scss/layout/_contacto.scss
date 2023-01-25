@@ -1,0 +1,38 @@
+main {
+    .contenedor_Contacto {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        // align-items: center;
+        height: auto;
+
+        .contenedor_Formulario {
+
+            fieldset {
+                display: flex;
+                flex-direction: column;
+                
+                .textfield_Datos {
+                    input {
+                        width: 100%;
+                    }
+                    textarea {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .botones_Formulario{
+                padding: 0.5rem;
+                    input{
+                    padding: 0.5rem;
+                    }
+            }
+        }
+
+        .contenedor_Informacion {
+            margin: 1rem;
+            background-color: rgb(235, 235, 235);
+        }
+    }
+}
