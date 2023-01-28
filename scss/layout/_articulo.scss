@@ -1,77 +1,74 @@
-main{
+main {
 
-    .contenedor_Articulo {
-        .carrusel_Articulo {
-            display: flex;
-            // height: 150vw;
-            .carousel-item {
+    .informacion_Articulo {
+        width: 100%;
+        .imagenes_Articulo{
+            .carrusel_Fotos{
                 img {
-                    max-width: 100%;
-                    max-height: 100%;
+                    width: 100%;
                 }
             }
         }
-
-        .contenedor_selectorImagenes {
-
-            .selector_Imagenes {
-                display: flex;
+        .miniaturas_Carrusel {
+            width: 100%;
+            ul {
+            display: flex;
+            width: 100%;
                 li {
-                    height: 25vw;
                     img {
-                        max-width: 100%;
-                        max-height: 100%;
+                        width: 100%;
+                        height: 110px;
                     }
                 }
             }
         }
+    }
 
-        .descripcion_Articulo {
-
-            margin: 2rem;
-
-            .precio_Articulo {
-                display: flex;
-                justify-content: space-between;
-                .precio_Secundario {
-                    color:gray;
-                }
+    .caracteristicas_Articulo {
+        margin: 1rem;
+        .precio_Articulo {
+            display: flex;
+            justify-content: space-around;
+            h3 {
+                margin: 1rem;
             }
-
-            .selectores_Articulo {
-
-                .selector_Talle {
-                    display: flex;
-                    justify-content: space-between;
-                    padding-top: 1rem;
-                }
-                .selector_Cantidad{
-                    display: flex;
-                    justify-content: space-between;
-                    padding-top: 1rem;
-                    input {
-                        width: 30vw;
-                    }
-                }
+            p {
+                color: gray;
+                margin: 1rem;
             }
+        }
 
-            .lista_detallesArticulo{
-                li {
-                    list-style-type: circle;
+        .selectores_Articulo {
+            display: flex;
+            justify-content: space-around;
+            .selector_Talle {
+                button {
+                    width: 9rem;
                 }
             }
         }
 
-        .contenedor_articulosSimilares {
-            .articulosSimilares {
-                display: flex;
+        .detalles_Articulo {
+            ul {
+                padding-left: 2rem;
                 li {
-                    height: 21vh;
-                    justify-content: space-around;
-                    img {
-                        max-width: 100%;
-                        max-height: 100%;
-                    }
+                    list-style: disc;
+                }
+            }
+        }
+    }
+
+    .articulos_Recomendados {
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+        margin: 1rem 0 1rem 0;
+        ul {
+            li {
+                display: inline-block;
+                width: 200px;
+                img {
+                    width: 100%;
                 }
             }
         }

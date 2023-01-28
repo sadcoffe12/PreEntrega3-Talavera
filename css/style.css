@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-h2 h3 p {
-  font-style: "Open Sans"; }
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +11,30 @@ h2 h3 p {
     margin: 0;
     padding: 0; }
 
-.nav_Logo {
+* h1 h2 h3 p li {
+  font-style: "Open Sans"; }
+
+* h2 {
+  font-size: xx-large;
+  text-align: center;
+  margin: 1rem; }
+
+* h3 {
+  font-size: x-large; }
+
+* p {
+  font-size: large; }
+
+* li {
+  font-size: large; }
+
+header h1 {
+  text-align: center;
+  visibility: hidden;
+  font-size: smaller;
+  height: 1px; }
+
+header .nav_Logo {
   width: 200px;
   height: 50px; }
 
@@ -64,16 +84,6 @@ footer {
     flex-wrap: wrap;
     padding: 0 1rem;
     gap: 2%; }
-
-main h2 {
-  text-align: center;
-  margin: 1rem; }
-
-main h3 {
-  font-size: xx-large; }
-
-main p {
-  font-size: x-large; }
 
 main .contenedor_carruselInicio .item_Carrusel img {
   width: fit-content;
@@ -175,48 +185,49 @@ main .contenedor_Contacto {
     margin: 1rem;
     background-color: #ebebeb; }
 
-main .contenedor_Articulo .carrusel_Articulo {
-  display: flex; }
-  main .contenedor_Articulo .carrusel_Articulo .carousel-item img {
-    max-width: 100%;
-    max-height: 100%; }
+main .informacion_Articulo {
+  width: 100%; }
+  main .informacion_Articulo .imagenes_Articulo .carrusel_Fotos img {
+    width: 100%; }
+  main .informacion_Articulo .miniaturas_Carrusel {
+    width: 100%; }
+    main .informacion_Articulo .miniaturas_Carrusel ul {
+      display: flex;
+      width: 100%; }
+      main .informacion_Articulo .miniaturas_Carrusel ul li img {
+        width: 100%;
+        height: 110px; }
 
-main .contenedor_Articulo .contenedor_selectorImagenes .selector_Imagenes {
-  display: flex; }
-  main .contenedor_Articulo .contenedor_selectorImagenes .selector_Imagenes li {
-    height: 25vw; }
-    main .contenedor_Articulo .contenedor_selectorImagenes .selector_Imagenes li img {
-      max-width: 100%;
-      max-height: 100%; }
-
-main .contenedor_Articulo .descripcion_Articulo {
-  margin: 2rem; }
-  main .contenedor_Articulo .descripcion_Articulo .precio_Articulo {
+main .caracteristicas_Articulo {
+  margin: 1rem; }
+  main .caracteristicas_Articulo .precio_Articulo {
     display: flex;
-    justify-content: space-between; }
-    main .contenedor_Articulo .descripcion_Articulo .precio_Articulo .precio_Secundario {
-      color: gray; }
-  main .contenedor_Articulo .descripcion_Articulo .selectores_Articulo .selector_Talle {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem; }
-  main .contenedor_Articulo .descripcion_Articulo .selectores_Articulo .selector_Cantidad {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem; }
-    main .contenedor_Articulo .descripcion_Articulo .selectores_Articulo .selector_Cantidad input {
-      width: 30vw; }
-  main .contenedor_Articulo .descripcion_Articulo .lista_detallesArticulo li {
-    list-style-type: circle; }
-
-main .contenedor_Articulo .contenedor_articulosSimilares .articulosSimilares {
-  display: flex; }
-  main .contenedor_Articulo .contenedor_articulosSimilares .articulosSimilares li {
-    height: 21vh;
     justify-content: space-around; }
-    main .contenedor_Articulo .contenedor_articulosSimilares .articulosSimilares li img {
-      max-width: 100%;
-      max-height: 100%; }
+    main .caracteristicas_Articulo .precio_Articulo h3 {
+      margin: 1rem; }
+    main .caracteristicas_Articulo .precio_Articulo p {
+      color: gray;
+      margin: 1rem; }
+  main .caracteristicas_Articulo .selectores_Articulo {
+    display: flex;
+    justify-content: space-around; }
+    main .caracteristicas_Articulo .selectores_Articulo .selector_Talle button {
+      width: 9rem; }
+  main .caracteristicas_Articulo .detalles_Articulo ul {
+    padding-left: 2rem; }
+    main .caracteristicas_Articulo .detalles_Articulo ul li {
+      list-style: disc; }
+
+main .articulos_Recomendados {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  margin: 1rem 0 1rem 0; }
+  main .articulos_Recomendados ul li {
+    display: inline-block;
+    width: 200px; }
+    main .articulos_Recomendados ul li img {
+      width: 100%; }
 
 @media screen and (min-width: 1200px) {
   main .contenedor_carruselInicio .item_Carrusel img {
@@ -243,19 +254,36 @@ main .contenedor_Articulo .contenedor_articulosSimilares .articulosSimilares {
     main .contenedor_Coleccion div {
       display: flex;
       flex-direction: row; }
-  main .contenedor_Articulo {
-    display: flex;
-    flex-direction: column; }
-    main .contenedor_Articulo .contenedor_imagenesArticulo {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      height: 60vw; }
-      main .contenedor_Articulo .contenedor_imagenesArticulo div .carrusel_Articulo .carousel-item {
-        width: 100%; }
-        main .contenedor_Articulo .contenedor_imagenesArticulo div .carrusel_Articulo .carousel-item img {
-          max-width: 100%;
-          max-height: 100%; }
+  main .informacion_Articulo {
+    display: flex; }
+    main .informacion_Articulo .imagenes_Articulo {
+      flex: 50%; }
+      main .informacion_Articulo .imagenes_Articulo .carrusel_Fotos {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto; }
+      main .informacion_Articulo .imagenes_Articulo .miniaturas_Carrusel {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto; }
+        main .informacion_Articulo .imagenes_Articulo .miniaturas_Carrusel img {
+          height: 6.5vw; }
+    main .informacion_Articulo .caracteristicas_Articulo {
+      flex: 50%; }
+      main .informacion_Articulo .caracteristicas_Articulo .selectores_Articulo {
+        margin: 1rem; }
+      main .informacion_Articulo .caracteristicas_Articulo .descripcion_Articulo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40rem; }
+      main .informacion_Articulo .caracteristicas_Articulo .detalles_Articulo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40rem; }
+  main .articulos_Recomendados {
+    height: 290px; }
   main .contenedor_Contacto {
     flex-direction: row;
     justify-content: space-around; }
